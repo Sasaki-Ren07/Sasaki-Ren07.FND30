@@ -1,0 +1,100 @@
+body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    background-color: rgb(65, 65, 65);
+}
+.text-container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text-container label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question {
+    display: flex;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.marker {
+    background: #91dbf1;
+    height: auto;
+}
+.text {
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    overflow-wrap: normal;
+}
+.text:focus, .text:focus-visible {
+    border: none;
+    outline: none;
+}
+.message {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.highlight {
+    color: red;
+    background-color: yellow;
+}
+.title {
+    font-size: 6vw;
+    line-height: 140%;
+}
+.title-sub {
+    font-size: 2.5vw;
+}
+.referenceText {
+    color: black;
+    font-size: 1.5vw;
+    width: 85vw;
+    height: 12vw;
+    padding: 10px;
+    margin-bottom: 0;
+    border: 5px double #333333;
+    background-color: white;
+}
+.small {
+    line-height:150%;
+}
+.time-display {
+    color: palevioletred;
+    font-size: 3vw;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.title-text {
+    height: 5%;
+}
