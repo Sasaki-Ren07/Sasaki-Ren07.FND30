@@ -92,7 +92,7 @@ document.addEventListener("input", (event) => {
                     message.classList.remove("hidden");
                     stopShowing();
                     missTypeCount.textContent = `ミス回数：${misscount}回   クリアタイム${timeCount}秒`
-                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}`
+                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}  acc : ${Math.floor(clearCount / (clearCount + misscount) * 100)}%`;
                 } else {
                     setQuestion();
                 }
@@ -136,7 +136,7 @@ document.addEventListener("input", (event) => {
                     time.classList.add("hidden")
                     message.classList.remove("hidden");
                     missTypeCount.textContent = `ミス回数：${misscount}回   クリアタイム${timeCount}秒`
-                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}`                    
+                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}  acc : ${Math.floor(clearCount / (clearCount + misscount) * 100)}%`;               
                 } else {
                     setQuestion();
                 }
