@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptタイピングゲーム</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="questionList.js"></script>
+</head>
+<body>
+    <div id = titlePage class = "text-container">
+        <h1 class = "title">JavaScriptタイピングゲーム!</h1>
+        <h2 class = "title-sub">ボタンを押す or Enterでゲーム開始！</h2>
+        <button id = startBtn class= "button">ゲーム開始！！</button>
+        <p class = "small">　</p>
+        <h2 id = "set-num" class = "title-sub">何問挑戦する？(デフォルト3問  全10問)</h2>
+        <input type="text" class="title-text" id ="numinput" autofocus autocomplete="off">
+        <button id = setBtn class= "button">問題数セット！</button>
+    </div>
+
+    <div id = "time" class = "time-display hidden" >スタート！！</div>
+
+    <div id ="game" class = "text-container hidden">
+        <label for ="inputText">
+            <div class = "question">
+                <p><span id = "entered" class = "marker"></span><span id ="misstype" class="highlight"></span><span id = "remained"></span></p>
+            </div>
+            <input type="text" class="text" id ="inputText" autofocus autocomplete="off">
+        </label>
+        <div id = reference class="referenceText">
+            <p id ="paragraphl-link1"></p>
+                <a id = "link1" href = "">詳細はここをチェック！(MDNの解説ページに飛びます)</a>
+            <p class = "small">　</p>
+            <p id ="paragraphl-link2"></p>
+                 <a id = "link2" href = "11"></a>
+        </div>
+    </div>
+
+    <div id = "message"  class = "text-container hidden">
+        <div id = "resultMessage" class = "message">
+            復習完了!お疲れ様でした！<br>
+            <button id = "replayBtn" class = "button">もう一度プレイする</button><br>
+            <span id = "missTypeCount" class="message"></span>
+            <p id = "wpm" class= "message"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
