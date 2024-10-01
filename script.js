@@ -156,11 +156,14 @@ replayzBtn.addEventListener("click", () => {
 
 
 startBtn.addEventListener("click", () => {
+    enterCount = 1;
     game.classList.remove("hidden");
-    titlePage.classList.add("hidden")
+    time.classList.remove("hidden")
+    titlePage.classList.add("hidden");
     inputText.focus();
     startShowing();
     setQuestion();
+    misscount = 0;
 });
 
 document.addEventListener("keydown", (event) => {
@@ -173,6 +176,7 @@ document.addEventListener("keydown", (event) => {
             inputText.focus();
             startShowing();
             setQuestion();
+            misscount = 0;
         }
     }
 });
