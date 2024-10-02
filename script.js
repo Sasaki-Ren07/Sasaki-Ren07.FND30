@@ -5,6 +5,7 @@
 const questions = [question1, question2, question3, question4, question5, question6, question7, question8];
 const numOfQuestions = questions.length;
 
+
 const entered = document.getElementById("entered");
 const remained = document.getElementById("remained");
 const inputText = document.getElementById("inputText");
@@ -40,6 +41,7 @@ let enterCount = 0;
 let missKey = 0;
 let challenge = 3;
 
+console.log(!game.classList.contains("hidden"))
 setNum.textContent = `何問挑戦する？(デフォルト3問  全${numOfQuestions}問)`;
 
 function setQuestion() {
@@ -103,9 +105,11 @@ document.addEventListener("input", (event) => {
             remainedTextWords.shift();
             remained.textContent = remainedTextWords.join("");
             misscount++;
-            wrongSound.volume = 0.2;
-            wrongSound.play();
-            wrongSound.currentTime = 0;
+            if (!game.classList.contains("hidden")) {
+                wrongSound.volume = 0.2;
+                wrongSound.play();
+                wrongSound.currentTime = 0;
+            }
 
             //お試し
             if (enteredTextWords[enteredTextWords.length - 1] === "\n") {
@@ -136,7 +140,7 @@ document.addEventListener("input", (event) => {
                     time.classList.add("hidden")
                     message.classList.remove("hidden");
                     missTypeCount.textContent = `ミス回数：${misscount}回   クリアタイム${timeCount}秒`
-                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}  acc : ${Math.floor(clearCount / (clearCount + misscount) * 100)}%`;               
+                    wpm.textContent = `wpm : ${Math.floor(clearCount / (timeCount / 60) / 5)}  acc : ${Math.floor(clearCount / (clearCount + misscount) * 100)}%`;             
                 } else {
                     setQuestion();
                 }
@@ -182,7 +186,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 setBtn.addEventListener("click", () => {
-    if (Number(numinput.value) <= numOfQuestions && numinput.value !== "") {
+    if (Number(numinput.value) <= numOfQuestions && numinput.value !== "" && Number(numinput.value) > 0) {
         challenge = Number(numinput.value);
         setNum.textContent = challenge + "問セット完了！";
     } 
