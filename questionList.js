@@ -94,3 +94,12 @@ const question11 = {
     link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/length",
     link2 : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/length"
 };
+
+
+const question12 = {
+    word : "originalArray.map(element => element < 5)",
+    supplement : "map 与えられた関数を配列のすべての要素に対して呼び出し、その結果からなる新しい配列を生成します。",
+    supplement2 : "=> アロー関数といいます。無名関数を簡単に書く手法です。",
+    link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+    link2 : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+};
