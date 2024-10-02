@@ -2,7 +2,8 @@
 
 
 //問題文リスト
-const questions = [question1, question2, question3, question4, question5, question6, question7, question8];
+const questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, 
+    question11];
 const numOfQuestions = questions.length;
 
 
@@ -41,6 +42,7 @@ let enterCount = 0;
 let missKey = 0;
 let challenge = 1;
 
+console.log(!game.classList.contains("hidden"))
 setNum.textContent = `何問挑戦する？(デフォルト1問  全${numOfQuestions}問)`;
 
 function setQuestion() {
