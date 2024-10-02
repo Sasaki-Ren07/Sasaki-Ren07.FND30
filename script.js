@@ -39,10 +39,10 @@ let clearCount = 0;
 let timeCount = 0;
 let enterCount = 0;
 let missKey = 0;
-let challenge = 3;
+let challenge = 1;
 
 console.log(!game.classList.contains("hidden"))
-setNum.textContent = `何問挑戦する？(デフォルト3問  全${numOfQuestions}問)`;
+setNum.textContent = `何問挑戦する？(デフォルト1問  全${numOfQuestions}問)`;
 
 function setQuestion() {
     currentKey = Math.floor(Math.random() * questions.length);
