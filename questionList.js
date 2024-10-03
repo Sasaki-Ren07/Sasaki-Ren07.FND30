@@ -55,8 +55,8 @@ const question7 = {
     word : "function sayIfComfortable(temp) {\n  if (temp >= 20 && temp <= 25) {\n    return \"It's not comfortable.\";\n  }\n}",
     supplement : "if...else 条件分岐させるのに使用する文言です。",
     supplement2 : "&&  論理積(A かつ B)  || 論理和(A または B)",
-    link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Logical_AND",
-    link2 : ""
+    link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/if...else",
+    link2 : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Logical_AND"
 };
 
 
