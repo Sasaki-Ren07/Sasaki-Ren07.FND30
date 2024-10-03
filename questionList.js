@@ -43,7 +43,7 @@ const question5 = {
 
 
 const question6 = {
-    word : "function biggerNumber(numA, numB) {\n  if (numA > numB) {\n    return \"A is bigger\";\n  }",
+    word : "function biggerNumber(numA, numB) {\n  if (numA > numB) {\n    return \"A is bigger\";\n  }\n}",
     supplement : "if...else 条件分岐させるのに使用する文言です。",
     supplement2 : "",
     link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/if...else",
@@ -52,7 +52,7 @@ const question6 = {
 
 
 const question7 = {
-    word : "function sayIfComfortable(temp) {\n  if (temp >= 20 && temp <= 25) {\n    return \"It's not comfortable.\";\n  }",
+    word : "function sayIfComfortable(temp) {\n  if (temp >= 20 && temp <= 25) {\n    return \"It's not comfortable.\";\n  }\n}",
     supplement : "if...else 条件分岐させるのに使用する文言です。",
     supplement2 : "&&  論理積(A かつ B)  || 論理和(A または B)",
     link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Logical_AND",
@@ -111,4 +111,22 @@ const question13 = {
     supplement2 : "getElementsByTagName() 指定されたタグ名を持つ要素を返します。配列のような形で返ってきます！",
     link : "https://developer.mozilla.org/ja/docs/Web/API/Document",
     link2 : "https://developer.mozilla.org/ja/docs/Web/API/Document/getElementsByTagName"
+};
+
+
+const question14 = {
+    word : "const colors = [\"red\", \"green\"];\nfor (const color of colors) {\n  console.log(color);\n}",
+    supplement : "for...of  配列内の一連の要素を処理するループを実行させたいときに使用します",
+    supplement2 : "ループのやり方はほかにもwhileループやforループなど複数あるのでそれぞれ調べてみましょう！",
+    link : "https://developer.mozilla.org/ja/docs/Web/API/Document",
+    link2 : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Loops_and_iteration"
+};
+
+
+const question15 = {
+    word : "const info = {name: \"Hana\", dog: true, age: 12};",
+    supplement : "関連するデータの集合体を{}で囲んで宣言したものをオブジェクトといいます！\n オブジェクトの中身は名前(key)と値(value)が対になったものです！",
+    supplement2 : "オブジェクトが持っている値をプロパティと呼び、その中でも値が関数のものはメソッドと呼びます",
+    link : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/Basics",
+    link2 : "https://developer.mozilla.org/ja/docs/Glossary/Method"
 };
