@@ -103,3 +103,12 @@ const question12 = {
     link : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
     link2 : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
 };
+
+
+const question13 = {
+    word : "document.getElementsByTagName(\"h1\")[0]",
+    supplement : "document  DOM ツリーであるウェブページのコンテンツへの入口としての役割を果たします。",
+    supplement2 : "getElementsByTagName() 指定されたタグ名を持つ要素を返します。配列のような形で返ってきます！",
+    link : "https://developer.mozilla.org/ja/docs/Web/API/Document",
+    link2 : "https://developer.mozilla.org/ja/docs/Web/API/Document/getElementsByTagName"
+};
